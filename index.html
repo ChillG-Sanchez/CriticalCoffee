@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elfogyott a kávé - Kritikusság kijelző</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Elfogyott a kávé - Kritikusság kijelző</h1>
+        <div id="alertMessage" class="alert alert-info text-center" role="alert">
+            Elfogyott a kávé, töltsd újra!
+        </div>
+        <div class="form-group">
+            <label for="severityRange">Hibaüzenet súlyossága:</label>
+            <input type="range" id="severityRange" class="form-control-range" min="0" max="4" step="1">
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
